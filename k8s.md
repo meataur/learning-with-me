@@ -106,8 +106,8 @@ flowchart TD
     NodePort2 -->|Optional External Access| PodD
 
     %% Pod-to-Pod communication
-    PodA -. Internal API .->|6. Calls| PodC
-    PodB -. Internal API .->|6. Calls| PodD
+    PodA -. "Internal API (6. Calls)" .-> PodC
+    PodB -. "Internal API (6. Calls)" .-> PodD
 
     %% Observability connections
     PodA -->|Metrics| Prometheus
